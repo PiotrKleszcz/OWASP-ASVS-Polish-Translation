@@ -1,6 +1,6 @@
 # Załącznik C: Standardy kryptograficzne
 
-Rozdział „Kryptografia" wykracza poza samo definiowanie najlepszych praktyk. Jego celem jest pogłębienie zrozumienia zasad kryptografii oraz zachęcenie do przyjmowania bardziej odpornych, nowoczesnych metod bezpieczeństwa. Niniejszy załącznik dostarcza szczegółowych informacji technicznych dotyczących poszczególnych wymagań, uzupełniając nadrzędne standardy przedstawione w rozdziale „Kryptografia".
+Rozdział „Kryptografia” wykracza poza samo definiowanie najlepszych praktyk. Jego celem jest pogłębienie zrozumienia zasad kryptografii oraz zachęcenie do przyjmowania bardziej odpornych, nowoczesnych metod bezpieczeństwa. Niniejszy załącznik dostarcza szczegółowych informacji technicznych dotyczących poszczególnych wymagań, uzupełniając nadrzędne standardy przedstawione w rozdziale „Kryptografia”.
 
 Załącznik definiuje poziomy dopuszczenia różnych mechanizmów kryptograficznych:
 

@@ -6,7 +6,7 @@ Niniejszy rozdział dotyczy najczęstszych słabości bezpieczeństwa aplikacji 
 
 W nowoczesnych aplikacjach internetowych najlepiej zawsze korzystać z bezpieczniejszych API, takich jak zapytania parametryzowane, automatyczne escapowanie czy frameworki szablonów. W przeciwnym razie starannie wykonane kodowanie danych wyjściowych, escapowanie lub sanityzacja stają się krytyczne dla bezpieczeństwa aplikacji.
 
-Walidacja danych wejściowych pełni rolę mechanizmu obrony w głąb, chroniącego przed nieoczekiwaną lub niebezpieczną treścią. Ponieważ jednak jej głównym celem jest zapewnienie, że przychodząca treść odpowiada oczekiwaniom funkcjonalnym i biznesowym, powiązane z nią wymagania znajdują się w rozdziale „Walidacja i logika biznesowa".
+Walidacja danych wejściowych pełni rolę mechanizmu obrony w głąb, chroniącego przed nieoczekiwaną lub niebezpieczną treścią. Ponieważ jednak jej głównym celem jest zapewnienie, że przychodząca treść odpowiada oczekiwaniom funkcjonalnym i biznesowym, powiązane z nią wymagania znajdują się w rozdziale „Walidacja i logika biznesowa”.
 
 ## V1.1 Architektura kodowania i sanityzacji
 
@@ -36,7 +36,7 @@ W wielu przypadkach biblioteki oprogramowania zawierają bezpieczne lub bezpiecz
 | **1.2.9** | Zweryfikuj, że aplikacja escapuje znaki specjalne w wyrażeniach regularnych (zazwyczaj za pomocą ukośnika wstecznego), aby zapobiec ich błędnej interpretacji jako metaznaków. | 2 |
 | **1.2.10** | Zweryfikuj, że aplikacja jest chroniona przed wstrzyknięciem CSV i formuł. Aplikacja musi przestrzegać reguł escapowania zdefiniowanych w RFC 4180, sekcje 2.6 i 2.7, podczas eksportu treści CSV. Dodatkowo przy eksporcie do CSV lub innych formatów arkuszy kalkulacyjnych (takich jak XLS, XLSX czy ODF) znaki specjalne (w tym '=', '+', '-', '@', '\t' (tabulator) oraz '\0' (znak null)) muszą być escapowane pojedynczym cudzysłowem, jeśli występują jako pierwszy znak wartości pola. | 3 |
 
-Uwaga: użycie zapytań parametryzowanych lub escapowanie SQL nie zawsze wystarcza. Części zapytania, takie jak nazwy tabel i kolumn (w tym nazwy kolumn w „ORDER BY"), nie mogą być escapowane. Umieszczenie escapowanych danych pochodzących od użytkownika w tych miejscach skutkuje błędnymi zapytaniami lub wstrzyknięciem SQL.
+Uwaga: użycie zapytań parametryzowanych lub escapowanie SQL nie zawsze wystarcza. Części zapytania, takie jak nazwy tabel i kolumn (w tym nazwy kolumn w „ORDER BY”), nie mogą być escapowane. Umieszczenie escapowanych danych pochodzących od użytkownika w tych miejscach skutkuje błędnymi zapytaniami lub wstrzyknięciem SQL.
 
 ## V1.3 Sanityzacja
 

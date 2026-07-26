@@ -19,7 +19,7 @@ Funkcjonalność przesyłania plików to główne źródło niezaufanych plików
 | # | Opis | Poziom |
 | :---: | :--- | :---: |
 | **5.2.1** | Zweryfikuj, że aplikacja przyjmuje wyłącznie pliki o rozmiarze, który jest w stanie przetworzyć bez utraty wydajności lub ataku odmowy usługi. | 1 |
-| **5.2.2** | Zweryfikuj, że gdy aplikacja przyjmuje plik — samodzielnie lub w archiwum takim jak plik zip — sprawdza, czy rozszerzenie pliku odpowiada oczekiwanemu rozszerzeniu, oraz waliduje, czy zawartość odpowiada typowi reprezentowanemu przez rozszerzenie. Obejmuje to między innymi sprawdzanie początkowych „magicznych bajtów", ponowne przetwarzanie obrazów (image re-writing) oraz użycie wyspecjalizowanych bibliotek do walidacji zawartości plików. Dla L1 można skupić się wyłącznie na plikach używanych do podejmowania konkretnych decyzji biznesowych lub dotyczących bezpieczeństwa. Dla L2 i wyżej musi to dotyczyć wszystkich przyjmowanych plików. | 1 |
+| **5.2.2** | Zweryfikuj, że gdy aplikacja przyjmuje plik — samodzielnie lub w archiwum takim jak plik zip — sprawdza, czy rozszerzenie pliku odpowiada oczekiwanemu rozszerzeniu, oraz waliduje, czy zawartość odpowiada typowi reprezentowanemu przez rozszerzenie. Obejmuje to między innymi sprawdzanie początkowych „magicznych bajtów”, ponowne przetwarzanie obrazów (image re-writing) oraz użycie wyspecjalizowanych bibliotek do walidacji zawartości plików. Dla L1 można skupić się wyłącznie na plikach używanych do podejmowania konkretnych decyzji biznesowych lub dotyczących bezpieczeństwa. Dla L2 i wyżej musi to dotyczyć wszystkich przyjmowanych plików. | 1 |
 | **5.2.3** | Zweryfikuj, że aplikacja sprawdza pliki skompresowane (np. zip, gz, docx, odt) względem maksymalnego dozwolonego rozmiaru po dekompresji oraz maksymalnej liczby plików przed rozpakowaniem pliku. | 2 |
 | **5.2.4** | Zweryfikuj, że egzekwowany jest przydział rozmiaru plików oraz maksymalna liczba plików na użytkownika, aby pojedynczy użytkownik nie mógł zapełnić przestrzeni dyskowej zbyt wieloma plikami lub plikami nadmiernie dużymi. | 3 |
 | **5.2.5** | Zweryfikuj, że aplikacja nie pozwala na przesyłanie plików skompresowanych zawierających dowiązania symboliczne, chyba że jest to wyraźnie wymagane (w takim przypadku konieczne będzie wymuszenie listy dozwolonych plików, do których dowiązania mogą prowadzić). | 3 |
@@ -51,4 +51,4 @@ Więcej informacji można znaleźć w następujących materiałach:
 
 * [OWASP File Upload Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html)
 * [Przykład wykorzystania dowiązań symbolicznych do odczytu dowolnych plików](https://hackerone.com/reports/1439593)
-* [Wyjaśnienie „magicznych bajtów" w Wikipedii](https://en.wikipedia.org/wiki/List_of_file_signatures)
+* [Wyjaśnienie „magicznych bajtów” w Wikipedii](https://en.wikipedia.org/wiki/List_of_file_signatures)

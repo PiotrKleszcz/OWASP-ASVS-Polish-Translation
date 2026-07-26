@@ -12,7 +12,7 @@ Dla atakujących pojęcie zakresu nie istnieje. Dlatego wymagania ASVS należy r
 
 ### Aplikacja
 
-ASVS definiuje „aplikację" jako tworzony produkt programowy, w który muszą zostać wbudowane mechanizmy bezpieczeństwa. ASVS nie narzuca działań w ramach cyklu wytwarzania oprogramowania ani nie dyktuje, jak aplikacja ma być budowana w potoku CI/CD; zamiast tego określa efekty w zakresie bezpieczeństwa, które muszą zostać osiągnięte w samym produkcie.
+ASVS definiuje „aplikację” jako tworzony produkt programowy, w który muszą zostać wbudowane mechanizmy bezpieczeństwa. ASVS nie narzuca działań w ramach cyklu wytwarzania oprogramowania ani nie dyktuje, jak aplikacja ma być budowana w potoku CI/CD; zamiast tego określa efekty w zakresie bezpieczeństwa, które muszą zostać osiągnięte w samym produkcie.
 
 Komponenty, które obsługują, modyfikują lub walidują ruch HTTP — takie jak zapory aplikacji internetowych (WAF), moduły równoważenia obciążenia czy serwery proxy — mogą być traktowane jako część aplikacji w tych konkretnych zastosowaniach, ponieważ niektóre mechanizmy bezpieczeństwa zależą bezpośrednio od nich lub mogą być przez nie realizowane. Komponenty te należy uwzględnić przy wymaganiach dotyczących odpowiedzi buforowanych w pamięci podręcznej, ograniczania częstotliwości żądań lub ograniczania połączeń przychodzących i wychodzących na podstawie źródła i celu.
 
@@ -28,19 +28,19 @@ Wszystkie pozostałe kwestie, takie jak aspekty funkcjonalne, styl kodu czy wyma
 
 ### Weryfikacja
 
-Wymaganie musi być weryfikowalne, a weryfikacja musi kończyć się decyzją „spełnione" albo „niespełnione".
+Wymaganie musi być weryfikowalne, a weryfikacja musi kończyć się decyzją „spełnione” albo „niespełnione”.
 
 ### Standard
 
 ASVS został zaprojektowany jako zbiór wymagań bezpieczeństwa, których wdrożenie oznacza zgodność ze standardem. Oznacza to, że wymagania ograniczają się do zdefiniowania celu bezpieczeństwa, który należy osiągnąć. Pozostałe powiązane informacje mogą być budowane na bazie ASVS lub powiązane z nim poprzez mapowania.
 
-W szczególności — OWASP prowadzi wiele projektów, a ASVS celowo unika pokrywania się z treścią innych z nich. Przykładowo programista może zapytać: „jak wdrożyć dane wymaganie w mojej konkretnej technologii lub środowisku" — na to odpowiada projekt Cheat Sheet Series. Weryfikator może zapytać: „jak przetestować to wymaganie w tym środowisku" — na to odpowiada projekt Web Security Testing Guide.
+W szczególności — OWASP prowadzi wiele projektów, a ASVS celowo unika pokrywania się z treścią innych z nich. Przykładowo programista może zapytać: „jak wdrożyć dane wymaganie w mojej konkretnej technologii lub środowisku” — na to odpowiada projekt Cheat Sheet Series. Weryfikator może zapytać: „jak przetestować to wymaganie w tym środowisku” — na to odpowiada projekt Web Security Testing Guide.
 
 Choć ASVS nie jest przeznaczony wyłącznie dla ekspertów ds. bezpieczeństwa, zakłada, że czytelnik dysponuje wiedzą techniczną pozwalającą zrozumieć treść lub umiejętnością samodzielnego zgłębienia poszczególnych zagadnień.
 
 ### Wymaganie
 
-Słowo „wymaganie" jest używane w ASVS w ścisłym znaczeniu — opisuje to, co musi zostać osiągnięte, aby je spełnić. ASVS zawiera wyłącznie wymagania (must) i nie zawiera zaleceń (should) jako głównego warunku.
+Słowo „wymaganie” jest używane w ASVS w ścisłym znaczeniu — opisuje to, co musi zostać osiągnięte, aby je spełnić. ASVS zawiera wyłącznie wymagania (must) i nie zawiera zaleceń (should) jako głównego warunku.
 
 Innymi słowy, zalecenia — niezależnie od tego, czy stanowią tylko jedną z wielu możliwych opcji rozwiązania problemu, czy dotyczą stylu kodu — nie spełniają definicji wymagania.
 
@@ -52,7 +52,7 @@ W bezpieczeństwie oprogramowania wczesne zaplanowanie projektu zabezpieczeń or
 
 Ponadto w przypadku niektórych wymagań implementacja będzie złożona i silnie zależna od potrzeb konkretnej aplikacji. Typowe przykłady to uprawnienia, walidacja danych wejściowych oraz mechanizmy ochronne wokół różnych poziomów danych wrażliwych.
 
-Aby to uwzględnić — zamiast ogólnikowych stwierdzeń w rodzaju „wszystkie dane muszą być szyfrowane" lub prób objęcia jednym wymaganiem każdego możliwego przypadku użycia — wprowadzono wymagania dotyczące dokumentacji, które nakazują udokumentowanie podejścia twórcy aplikacji do tego typu mechanizmów oraz ich konfiguracji. Dokumentację można następnie ocenić pod kątem adekwatności, a rzeczywistą implementację porównać z nią, aby sprawdzić, czy odpowiada oczekiwaniom.
+Aby to uwzględnić — zamiast ogólnikowych stwierdzeń w rodzaju „wszystkie dane muszą być szyfrowane” lub prób objęcia jednym wymaganiem każdego możliwego przypadku użycia — wprowadzono wymagania dotyczące dokumentacji, które nakazują udokumentowanie podejścia twórcy aplikacji do tego typu mechanizmów oraz ich konfiguracji. Dokumentację można następnie ocenić pod kątem adekwatności, a rzeczywistą implementację porównać z nią, aby sprawdzić, czy odpowiada oczekiwaniom.
 
 Wymagania te służą udokumentowaniu decyzji, które organizacja tworząca aplikację podjęła w kwestii sposobu wdrożenia określonych wymagań bezpieczeństwa.
 
@@ -94,7 +94,7 @@ Są to na ogół wymagania krytyczne lub podstawowe, stanowiące pierwszą warst
 
 Oprócz wymagań pierwszej warstwy obrony znajdują się tu wymagania, których znaczenie na wyższych poziomach maleje — na przykład te dotyczące haseł. Są one ważniejsze na poziomie 1, ponieważ od wyższych poziomów zaczynają obowiązywać wymagania dotyczące uwierzytelniania wieloskładnikowego.
 
-Poziom 1 niekoniecznie da się zweryfikować testem penetracyjnym prowadzonym przez zewnętrznego testera bez dostępu do dokumentacji lub kodu (tzw. testowanie „czarnoskrzynkowe"), choć mniejsza liczba wymagań powinna ułatwić weryfikację.
+Poziom 1 niekoniecznie da się zweryfikować testem penetracyjnym prowadzonym przez zewnętrznego testera bez dostępu do dokumentacji lub kodu (tzw. testowanie „czarnoskrzynkowe”), choć mniejsza liczba wymagań powinna ułatwić weryfikację.
 
 ### Poziom 2
 
@@ -124,7 +124,7 @@ Celem podziału na rozdziały i sekcje jest ułatwienie wyboru lub odfiltrowania
 
 ### Strategia wydań
 
-Wydania ASVS są numerowane według wzorca „Major.Minor.Patch" (główne.poboczne.poprawka), a numery informują, co zmieniło się w danym wydaniu. W wydaniu głównym zmienia się pierwsza liczba, w wydaniu pobocznym — druga, a w poprawce — trzecia.
+Wydania ASVS są numerowane według wzorca „Major.Minor.Patch” (główne.poboczne.poprawka), a numery informują, co zmieniło się w danym wydaniu. W wydaniu głównym zmienia się pierwsza liczba, w wydaniu pobocznym — druga, a w poprawce — trzecia.
 
 * Wydanie główne — pełna reorganizacja; zmianie mogło ulec niemal wszystko, łącznie z numeracją wymagań. Konieczna będzie ponowna ocena zgodności (na przykład 4.0.3 -> 5.0.0).
 * Wydanie poboczne — wymagania mogą zostać dodane lub usunięte, ale ogólna numeracja pozostaje bez zmian. Ponowna ocena zgodności będzie konieczna, lecz powinna być łatwiejsza (na przykład 5.0.0 -> 5.1.0).
@@ -148,13 +148,13 @@ Najlepiej, aby każda organizacja stworzyła własną, dopasowaną wersję ASVS,
 
 Każde wymaganie ma identyfikator w formacie `<rozdział>.<sekcja>.<wymaganie>`, gdzie każdy element jest liczbą. Na przykład: `1.11.3`.
 
-* Wartość `<rozdział>` odpowiada rozdziałowi, z którego pochodzi wymaganie; na przykład wszystkie wymagania `1.#.#` pochodzą z rozdziału „Kodowanie i sanityzacja".
-* Wartość `<sekcja>` odpowiada sekcji w obrębie tego rozdziału, w której znajduje się wymaganie; na przykład wszystkie wymagania `1.2.#` znajdują się w sekcji „Zapobieganie wstrzyknięciom" rozdziału „Kodowanie i sanityzacja".
+* Wartość `<rozdział>` odpowiada rozdziałowi, z którego pochodzi wymaganie; na przykład wszystkie wymagania `1.#.#` pochodzą z rozdziału „Kodowanie i sanityzacja”.
+* Wartość `<sekcja>` odpowiada sekcji w obrębie tego rozdziału, w której znajduje się wymaganie; na przykład wszystkie wymagania `1.2.#` znajdują się w sekcji „Zapobieganie wstrzyknięciom” rozdziału „Kodowanie i sanityzacja”.
 * Wartość `<wymaganie>` identyfikuje konkretne wymaganie w obrębie rozdziału i sekcji, na przykład `1.2.5`, które w wersji 5.0.0 niniejszego standardu brzmi:
 
 > Zweryfikuj, że aplikacja chroni przed wstrzyknięciem poleceń systemu operacyjnego oraz że wywołania systemowe używają sparametryzowanych zapytań systemowych lub stosują kontekstowe kodowanie danych wyjściowych wiersza poleceń.
 
-Ponieważ identyfikatory mogą się zmieniać między wersjami standardu, w innych dokumentach, raportach lub narzędziach zaleca się stosowanie formatu: `v<wersja>-<rozdział>.<sekcja>.<wymaganie>`, gdzie „wersja" to znacznik wersji ASVS. Na przykład `v5.0.0-1.2.5` oznaczałoby konkretnie piąte wymaganie w sekcji „Zapobieganie wstrzyknięciom" rozdziału „Kodowanie i sanityzacja" z wersji 5.0.0. (Można to podsumować jako `v<wersja>-<identyfikator_wymagania>`.)
+Ponieważ identyfikatory mogą się zmieniać między wersjami standardu, w innych dokumentach, raportach lub narzędziach zaleca się stosowanie formatu: `v<wersja>-<rozdział>.<sekcja>.<wymaganie>`, gdzie „wersja” to znacznik wersji ASVS. Na przykład `v5.0.0-1.2.5` oznaczałoby konkretnie piąte wymaganie w sekcji „Zapobieganie wstrzyknięciom” rozdziału „Kodowanie i sanityzacja” z wersji 5.0.0. (Można to podsumować jako `v<wersja>-<identyfikator_wymagania>`.)
 
 Uwaga: litera `v` poprzedzająca numer wersji w tym formacie powinna być zawsze mała.
 
@@ -180,7 +180,7 @@ ASVS został zaprojektowany tak, aby był wysoce testowalny. Niektóre weryfikac
 
 ### Do szkoleń z bezpiecznego wytwarzania oprogramowania
 
-ASVS może również służyć do zdefiniowania cech bezpiecznego oprogramowania. Wiele kursów „bezpiecznego kodowania" to w istocie kursy etycznego hakowania z lekką domieszką wskazówek programistycznych. Niekoniecznie pomaga to programistom pisać bezpieczniejszy kod. Zamiast tego kursy bezpiecznego wytwarzania oprogramowania mogą opierać się na ASVS, z silnym naciskiem na pozytywne mechanizmy w nim opisane — zamiast na listę dziesięciu negatywnych rzeczy, których robić nie należy. Struktura ASVS zapewnia też logiczny układ do omawiania kolejnych zagadnień przy zabezpieczaniu aplikacji.
+ASVS może również służyć do zdefiniowania cech bezpiecznego oprogramowania. Wiele kursów „bezpiecznego kodowania” to w istocie kursy etycznego hakowania z lekką domieszką wskazówek programistycznych. Niekoniecznie pomaga to programistom pisać bezpieczniejszy kod. Zamiast tego kursy bezpiecznego wytwarzania oprogramowania mogą opierać się na ASVS, z silnym naciskiem na pozytywne mechanizmy w nim opisane — zamiast na listę dziesięciu negatywnych rzeczy, których robić nie należy. Struktura ASVS zapewnia też logiczny układ do omawiania kolejnych zagadnień przy zabezpieczaniu aplikacji.
 
 ### Jako ramy wspierające zakup bezpiecznego oprogramowania
 

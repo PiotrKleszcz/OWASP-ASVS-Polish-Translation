@@ -11,14 +11,14 @@ Wiele wymagań tego rozdziału odnosi się do wybranych mechanizmów [NIST SP 80
 
 Warto zauważyć, że wymagania dotyczące konkretnych szczegółów implementacyjnych niektórych mechanizmów zarządzania sesją znajdują się w innych miejscach:
 
-* Ciasteczka HTTP to powszechny mechanizm zabezpieczania tokenów sesji. Szczegółowe wymagania bezpieczeństwa dla ciasteczek znajdują się w rozdziale „Bezpieczeństwo frontendu webowego".
-* Tokeny samowystarczalne są często używane jako sposób utrzymywania sesji. Szczegółowe wymagania bezpieczeństwa znajdują się w rozdziale „Tokeny samowystarczalne".
+* Ciasteczka HTTP to powszechny mechanizm zabezpieczania tokenów sesji. Szczegółowe wymagania bezpieczeństwa dla ciasteczek znajdują się w rozdziale „Bezpieczeństwo frontendu webowego”.
+* Tokeny samowystarczalne są często używane jako sposób utrzymywania sesji. Szczegółowe wymagania bezpieczeństwa znajdują się w rozdziale „Tokeny samowystarczalne”.
 
 ## V7.1 Dokumentacja zarządzania sesją
 
 Nie istnieje jeden wzorzec pasujący do wszystkich aplikacji. Nie jest zatem możliwe zdefiniowanie uniwersalnych granic i limitów odpowiednich dla wszystkich przypadków. Warunkiem wstępnym implementacji i testowania musi być analiza ryzyka wraz z udokumentowanymi decyzjami bezpieczeństwa dotyczącymi obsługi sesji. Zapewnia to dopasowanie systemu zarządzania sesją do konkretnych wymagań aplikacji.
 
-Niezależnie od tego, czy wybrano mechanizm sesji stanowy, czy „bezstanowy", analiza musi być kompletna i udokumentowana, aby wykazać, że wybrane rozwiązanie jest w stanie spełnić wszystkie istotne wymagania bezpieczeństwa. Należy również uwzględnić interakcję z ewentualnie używanymi mechanizmami jednokrotnego logowania (SSO).
+Niezależnie od tego, czy wybrano mechanizm sesji stanowy, czy „bezstanowy”, analiza musi być kompletna i udokumentowana, aby wykazać, że wybrane rozwiązanie jest w stanie spełnić wszystkie istotne wymagania bezpieczeństwa. Należy również uwzględnić interakcję z ewentualnie używanymi mechanizmami jednokrotnego logowania (SSO).
 
 | # | Opis | Poziom |
 | :---: | :--- | :---: |
@@ -66,7 +66,7 @@ Dla stanowych mechanizmów sesji zakończenie zwykle polega na unieważnieniu se
 
 Ta sekcja zawiera wymagania ograniczające ryzyko stwarzane przez aktywne sesje, które zostały przejęte lub są nadużywane poprzez wektory bazujące na istnieniu i możliwościach aktywnych sesji użytkowników. Przykładem jest wykorzystanie wykonania złośliwej treści do zmuszenia uwierzytelnionej przeglądarki ofiary do wykonania akcji z użyciem jej sesji.
 
-Rozważając wymagania tej sekcji, należy wziąć pod uwagę wytyczne dla poszczególnych poziomów z rozdziału „Uwierzytelnianie".
+Rozważając wymagania tej sekcji, należy wziąć pod uwagę wytyczne dla poszczególnych poziomów z rozdziału „Uwierzytelnianie”.
 
 | # | Opis | Poziom |
 | :---: | :--- | :---: |

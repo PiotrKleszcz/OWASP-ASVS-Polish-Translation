@@ -70,9 +70,9 @@ Ta sekcja definiuje wymagania zapewniające, że aplikacje zawodzą w sposób ko
 | **16.5.1** | Zweryfikuj, że po wystąpieniu nieoczekiwanego lub wrażliwego z punktu widzenia bezpieczeństwa błędu konsumentowi zwracany jest komunikat ogólny, gwarantujący brak ekspozycji wrażliwych wewnętrznych danych systemowych, takich jak ślady stosu, zapytania, klucze tajne i tokeny. | 2 |
 | **16.5.2** | Zweryfikuj, że aplikacja kontynuuje bezpieczne działanie, gdy dostęp do zasobu zewnętrznego zawiedzie — na przykład stosując wzorce takie jak circuit breaker czy kontrolowana degradacja (graceful degradation). | 2 |
 | **16.5.3** | Zweryfikuj, że aplikacja zawodzi w sposób kontrolowany i bezpieczny, również przy wystąpieniu wyjątku, zapobiegając stanom fail-open, takim jak przetworzenie transakcji pomimo błędów logiki walidacji. | 2 |
-| **16.5.4** | Zweryfikuj, że zdefiniowana jest procedura obsługi błędów „ostatniej szansy", przechwytująca wszystkie nieobsłużone wyjątki. Ma to zarówno zapobiec utracie szczegółów błędów, które muszą trafić do plików logów, jak i zapewnić, że błąd nie wyłączy całego procesu aplikacji, prowadząc do utraty dostępności. | 3 |
+| **16.5.4** | Zweryfikuj, że zdefiniowana jest procedura obsługi błędów „ostatniej szansy”, przechwytująca wszystkie nieobsłużone wyjątki. Ma to zarówno zapobiec utracie szczegółów błędów, które muszą trafić do plików logów, jak i zapewnić, że błąd nie wyłączy całego procesu aplikacji, prowadząc do utraty dostępności. | 3 |
 
-Uwaga: niektóre języki (w tym Swift, Go oraz — poprzez powszechną praktykę projektową — wiele języków funkcyjnych) nie wspierają wyjątków ani procedur obsługi „ostatniej szansy". W takim przypadku architekci i programiści powinni użyć wzorca właściwego dla danego języka lub frameworka, aby zapewnić, że aplikacje potrafią bezpiecznie obsługiwać zdarzenia wyjątkowe, nieoczekiwane lub związane z bezpieczeństwem.
+Uwaga: niektóre języki (w tym Swift, Go oraz — poprzez powszechną praktykę projektową — wiele języków funkcyjnych) nie wspierają wyjątków ani procedur obsługi „ostatniej szansy”. W takim przypadku architekci i programiści powinni użyć wzorca właściwego dla danego języka lub frameworka, aby zapewnić, że aplikacje potrafią bezpiecznie obsługiwać zdarzenia wyjątkowe, nieoczekiwane lub związane z bezpieczeństwem.
 
 ## Źródła
 
