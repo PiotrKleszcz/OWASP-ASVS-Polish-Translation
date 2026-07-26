@@ -2,7 +2,7 @@
 
 ## Cel kontrolny
 
-Korzystanie z plików może stwarzać dla aplikacji różnorodne ryzyka, w tym odmowę usługi, nieautoryzowany dostęp i wyczerpanie przestrzeni dyskowej. Niniejszy rozdział zawiera wymagania adresujące te ryzyka.
+Korzystanie z plików może stwarzać dla aplikacji różnorodne ryzyka, w tym odmowę usługi, nieautoryzowany dostęp i wyczerpanie przestrzeni dyskowej. Niniejszy rozdział zawiera wymagania odnoszące się do tych ryzyk.
 
 ## V5.1 Dokumentacja obsługi plików
 

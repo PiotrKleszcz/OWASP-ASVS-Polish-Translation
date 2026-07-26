@@ -86,7 +86,7 @@ W ramach tego istnieje potrzeba stosowania zatwierdzonych mechanizmów wymiany k
 | # | Opis | Poziom |
 | :---: | :--- | :---: |
 | **11.6.1** | Zweryfikuj, że do generowania kluczy i zasilania generatora (seeding) oraz do generowania i weryfikacji podpisów cyfrowych używane są wyłącznie zatwierdzone algorytmy kryptograficzne i tryby działania. Algorytmy generowania kluczy nie mogą generować kluczy niebezpiecznych, podatnych na znane ataki — na przykład kluczy RSA podatnych na faktoryzację Fermata. | 2 |
-| **11.6.2** | Zweryfikuj, że do wymiany kluczy używane są zatwierdzone algorytmy kryptograficzne (takie jak Diffie-Hellman), ze szczególnym naciskiem na to, aby mechanizmy wymiany kluczy używały bezpiecznych parametrów. Zapobiegnie to atakom na proces ustanawiania klucza, które mogłyby prowadzić do ataków adversary-in-the-middle lub złamań kryptograficznych. | 3 |
+| **11.6.2** | Zweryfikuj, że do wymiany kluczy używane są zatwierdzone algorytmy kryptograficzne (takie jak Diffie-Hellman), ze szczególnym naciskiem na to, aby mechanizmy wymiany kluczy używały bezpiecznych parametrów. Zapobiegnie to atakom na proces ustanawiania klucza, które mogłyby prowadzić do ataków typu adversary-in-the-middle lub złamań kryptograficznych. | 3 |
 
 ## V11.7 Kryptografia danych w użyciu
 

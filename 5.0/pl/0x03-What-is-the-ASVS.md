@@ -66,11 +66,11 @@ Oczywiście nie oczekuje się, że decyzje te będą podejmowane i dokumentowane
 
 Dostarczanie programistom specyfikacji i projektów nowych funkcji to standardowy element wytwarzania oprogramowania. Podobnie oczekuje się, że programiści będą korzystać ze wspólnych komponentów i mechanizmów interfejsu użytkownika, zamiast każdorazowo podejmować własne decyzje. Rozszerzenie tej praktyki na bezpieczeństwo nie powinno więc dziwić ani budzić kontrowersji.
 
-Istnieje również elastyczność co do sposobu realizacji. Decyzje dotyczące bezpieczeństwa mogą zostać udokumentowane w dosłownym dokumencie, do którego programiści mają się odwoływać. Alternatywnie mogą zostać udokumentowane i zaimplementowane we wspólnej bibliotece kodu, z której wszyscy programiści mają obowiązek korzystać. W obu przypadkach osiągany jest pożądany rezultat.
+Istnieje również elastyczność co do sposobu realizacji. Decyzje dotyczące bezpieczeństwa mogą zostać udokumentowane w postaci dokumentu, do którego programiści mają się odwoływać. Alternatywnie mogą zostać udokumentowane i zaimplementowane we wspólnej bibliotece kodu, z której wszyscy programiści mają obowiązek korzystać. W obu przypadkach osiągany jest pożądany rezultat.
 
 ## Poziomy weryfikacji bezpieczeństwa aplikacji
 
-ASVS definiuje trzy poziomy weryfikacji bezpieczeństwa, z których każdy kolejny zwiększa głębokość i złożoność. Ogólnym założeniem jest, aby organizacje zaczynały od pierwszego poziomu w celu zaadresowania najbardziej krytycznych kwestii bezpieczeństwa, a następnie przechodziły na wyższe poziomy stosownie do potrzeb organizacji i aplikacji. W dokumencie oraz w treści wymagań poziomy mogą być oznaczane jako L1, L2 i L3.
+ASVS definiuje trzy poziomy weryfikacji bezpieczeństwa, z których każdy kolejny zwiększa głębokość i złożoność. Ogólnym założeniem jest, aby organizacje zaczynały od pierwszego poziomu, aby zająć się najbardziej krytycznymi kwestiami bezpieczeństwa, a następnie przechodziły na wyższe poziomy stosownie do potrzeb organizacji i aplikacji. W dokumencie oraz w treści wymagań poziomy mogą być oznaczane jako L1, L2 i L3.
 
 Każdy poziom ASVS wskazuje wymagania bezpieczeństwa, których spełnienie jest konieczne do jego osiągnięcia, przy czym wymagania pozostałych, wyższych poziomów mają charakter zaleceń.
 
@@ -78,7 +78,7 @@ Aby uniknąć duplikowania wymagań lub wymagań, które na wyższych poziomach 
 
 ### Ocena poziomów
 
-Poziomy zostały zdefiniowane w drodze opartej na priorytetach oceny każdego wymagania, bazującej na doświadczeniu z wdrażania i testowania wymagań bezpieczeństwa. Główny nacisk położono na porównanie redukcji ryzyka z nakładem pracy potrzebnym do wdrożenia wymagania. Kolejnym kluczowym czynnikiem było utrzymanie niskiego progu wejścia.
+Poziomy zostały zdefiniowane w drodze opartej na priorytetach oceny każdego wymagania, bazującej na doświadczeniu we wdrażaniu i testowaniu wymagań bezpieczeństwa. Główny nacisk położono na porównanie redukcji ryzyka z nakładem pracy potrzebnym do wdrożenia wymagania. Kolejnym kluczowym czynnikiem było utrzymanie niskiego progu wejścia.
 
 Redukcja ryzyka uwzględnia stopień, w jakim wymaganie obniża poziom ryzyka bezpieczeństwa w aplikacji, biorąc pod uwagę klasyczne czynniki wpływu: poufność, integralność i dostępność, a także to, czy dane wymaganie stanowi podstawową warstwę obrony, czy raczej element obrony w głąb.
 
@@ -130,7 +130,7 @@ Wydania ASVS są numerowane według wzorca „Major.Minor.Patch” (główne.pob
 * Wydanie poboczne — wymagania mogą zostać dodane lub usunięte, ale ogólna numeracja pozostaje bez zmian. Ponowna ocena zgodności będzie konieczna, lecz powinna być łatwiejsza (na przykład 5.0.0 -> 5.1.0).
 * Poprawka — wymagania mogą zostać usunięte (na przykład jako duplikaty lub nieaktualne) lub złagodzone, ale aplikacja zgodna z poprzednim wydaniem będzie zgodna również z poprawką (na przykład 5.0.0 -> 5.0.1).
 
-Powyższe odnosi się wyłącznie do wymagań ASVS. Zmiany w tekście towarzyszącym i pozostałych treściach, takich jak załączniki, nie będą traktowane jako zmiany krytyczne.
+Powyższe odnosi się wyłącznie do wymagań ASVS. Zmiany w tekście towarzyszącym i pozostałych treściach, takich jak załączniki, nie będą traktowane jako zmiany łamiące zgodność wsteczną.
 
 ### Elastyczność ASVS
 

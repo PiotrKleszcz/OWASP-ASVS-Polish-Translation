@@ -17,7 +17,7 @@ Dokumentacja walidacji i logiki biznesowej powinna jasno definiować limity logi
 | :---: | :--- | :---: |
 | **2.1.1** | Zweryfikuj, że dokumentacja aplikacji definiuje reguły walidacji danych wejściowych określające, jak sprawdzać poprawność danych względem oczekiwanej struktury. Mogą to być powszechne formaty danych, takie jak numery kart płatniczych, adresy e-mail, numery telefonów, lub wewnętrzny format danych. | 1 |
 | **2.1.2** | Zweryfikuj, że dokumentacja aplikacji definiuje sposób walidacji logicznej i kontekstowej spójności powiązanych danych — na przykład sprawdzenie, czy dzielnica i kod pocztowy do siebie pasują. | 2 |
-| **2.1.3** | Zweryfikuj, że oczekiwania dotyczące limitów i walidacji logiki biznesowej są udokumentowane, zarówno w ujęciu per użytkownik, jak i globalnie dla całej aplikacji. | 2 |
+| **2.1.3** | Zweryfikuj, że oczekiwania dotyczące limitów i walidacji logiki biznesowej są udokumentowane, zarówno dla poszczególnych użytkowników, jak i globalnie dla całej aplikacji. | 2 |
 
 ## V2.2 Walidacja danych wejściowych
 

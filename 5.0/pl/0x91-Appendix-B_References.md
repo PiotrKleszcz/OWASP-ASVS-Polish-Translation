@@ -1,6 +1,6 @@
 # Załącznik B: Źródła
 
-Następujące projekty OWASP będą najprawdopodobniej przydatne dla użytkowników i adoptujących niniejszy standard:
+Następujące projekty OWASP będą najprawdopodobniej przydatne dla użytkowników i wdrażających niniejszy standard:
 
 ## Główne projekty OWASP
 
@@ -32,7 +32,7 @@ Mapowanie do ASVS można znaleźć tutaj: [https://cheatsheetseries.owasp.org/In
 
 ## Pozostałe
 
-Analogicznie, następujące strony internetowe będą najprawdopodobniej przydatne dla użytkowników i adoptujących niniejszy standard:
+Analogicznie, następujące strony internetowe będą najprawdopodobniej przydatne dla użytkowników i wdrażających niniejszy standard:
 
 1. SecLists Github: [https://github.com/danielmiessler/SecLists](https://github.com/danielmiessler/SecLists)
 2. MITRE Common Weakness Enumeration: [https://cwe.mitre.org/](https://cwe.mitre.org/)

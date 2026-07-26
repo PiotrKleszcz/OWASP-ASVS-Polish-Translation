@@ -24,7 +24,7 @@ OAuth i OIDC zostały pierwotnie zaprojektowane dla aplikacji stron trzecich. Ob
 
 OAuth i OIDC mogą być stosowane w wielu typach aplikacji, ale ASVS i wymagania tego rozdziału koncentrują się na aplikacjach internetowych i API.
 
-Ponieważ OAuth i OIDC można traktować jako logikę zbudowaną na technologiach webowych, ogólne wymagania z pozostałych rozdziałów zawsze mają zastosowanie, a tego rozdziału nie można wyrywać z kontekstu.
+Ponieważ OAuth i OIDC można traktować jako logikę zbudowaną na technologiach webowych, ogólne wymagania z pozostałych rozdziałów zawsze mają zastosowanie, a tego rozdziału nie można rozpatrywać w oderwaniu od kontekstu.
 
 Niniejszy rozdział odzwierciedla aktualne najlepsze praktyki dla OAuth2 i OIDC, zgodne ze specyfikacjami dostępnymi pod adresami <https://oauth.net/2/> oraz <https://openid.net/developers/specs/>. Nawet jeśli RFC są uznawane za dojrzałe, są często aktualizowane — dlatego stosując wymagania tego rozdziału, ważne jest trzymanie się najnowszych wersji. Więcej szczegółów w sekcji źródeł.
 
@@ -34,9 +34,9 @@ Terminologia użyta w tym rozdziale jest zgodna z RFC OAuth i specyfikacjami OID
 
 W kontekście OAuth i OIDC termin „token” w tym rozdziale odnosi się do:
 
-* Tokenów dostępu, które mogą być konsumowane wyłącznie przez RS i mogą być tokenami referencyjnymi walidowanymi poprzez introspekcję albo tokenami samowystarczalnymi walidowanymi z użyciem materiału klucza.
-* Tokenów odświeżania, które mogą być konsumowane wyłącznie przez serwer autoryzacji, który je wystawił.
-* Tokenów ID OIDC, które mogą być konsumowane wyłącznie przez klienta, który zainicjował przepływ autoryzacji.
+* Tokenów dostępu, które mogą być wykorzystywane wyłącznie przez RS i mogą być tokenami referencyjnymi walidowanymi poprzez introspekcję albo tokenami samowystarczalnymi walidowanymi z użyciem materiału klucza.
+* Tokenów odświeżania, które mogą być wykorzystywane wyłącznie przez serwer autoryzacji, który je wystawił.
+* Tokenów ID OIDC, które mogą być wykorzystywane wyłącznie przez klienta, który zainicjował przepływ autoryzacji.
 
 Poziomy ryzyka niektórych wymagań tego rozdziału zależą od tego, czy klient jest klientem poufnym, czy uznawany jest za klienta publicznego. Ponieważ silne uwierzytelnianie klienta ogranicza wiele wektorów ataku, kilka wymagań może zostać złagodzonych przy stosowaniu klienta poufnego w aplikacjach L1.
 

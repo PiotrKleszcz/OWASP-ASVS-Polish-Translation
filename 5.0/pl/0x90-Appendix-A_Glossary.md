@@ -39,7 +39,7 @@
 * **Mutual TLS** (mTLS) – zob. TLS client authentication.
 * **Object-relational Mapping** (ORM, mapowanie obiektowo-relacyjne) – system pozwalający odwoływać się do relacyjnej/tabelarycznej bazy danych i odpytywać ją z poziomu programu aplikacji przy użyciu modelu obiektowego zgodnego z aplikacją.
 * **One-time Password** (OTP, hasło jednorazowe) – hasło generowane unikalnie do jednorazowego użycia.
-* **Open Worldwide Application Security Project** (OWASP) – Open Worldwide Application Security Project (OWASP) to światowa, wolna i otwarta społeczność skoncentrowana na poprawie bezpieczeństwa oprogramowania aplikacyjnego. Naszą misją jest uczynienie bezpieczeństwa aplikacji „widocznym”, aby ludzie i organizacje mogli podejmować świadome decyzje dotyczące ryzyk bezpieczeństwa aplikacji. Zob.: [https://www.owasp.org/](https://www.owasp.org/).
+* **Open Worldwide Application Security Project** (OWASP) – Open Worldwide Application Security Project (OWASP) to światowa, wolna i otwarta społeczność skoncentrowana na poprawie bezpieczeństwa oprogramowania aplikacyjnego. Naszą misją jest uczynienie bezpieczeństwa aplikacji „widocznym”, aby ludzie i organizacje mogły podejmować świadome decyzje dotyczące ryzyk bezpieczeństwa aplikacji. Zob.: [https://www.owasp.org/](https://www.owasp.org/).
 * **Password-Based Key Derivation Function 2** (PBKDF2) – specjalny algorytm jednokierunkowy używany do tworzenia silnego klucza kryptograficznego z tekstu wejściowego (takiego jak hasło) i dodatkowej losowej wartości soli; może zatem służyć utrudnieniu łamania hasła offline, jeśli zamiast oryginalnego hasła przechowywana jest wartość wynikowa.
 * **Public Key Infrastructure** (PKI, infrastruktura klucza publicznego) – rozwiązanie wiążące klucze publiczne z tożsamościami odpowiednich podmiotów. Powiązanie jest ustanawiane w procesie rejestracji i wystawiania certyfikatów w urzędzie certyfikacji (CA) i przez ten urząd.
 * **Public Switched Telephone Network** (PSTN, publiczna komutowana sieć telefoniczna) – tradycyjna sieć telefoniczna obejmująca zarówno telefony stacjonarne, jak i komórkowe.
@@ -78,7 +78,7 @@
 * **Trusted execution environment** (TEE, zaufane środowisko wykonawcze) – izolowane środowisko przetwarzania, w którym aplikacje mogą być bezpiecznie wykonywane niezależnie od reszty systemu.
 * **Trusted Platform Module** (TPM) – typ HSM zwykle dołączony do większego komponentu sprzętowego, takiego jak płyta główna, i pełniący rolę „korzenia zaufania” (root of trust) dla tego systemu.
 * **Trusted Service Layer** (zaufana warstwa usługowa) – dowolny zaufany punkt egzekwowania mechanizmów, taki jak mikroserwis, API serverless, strona serwerowa, zaufane API na urządzeniu klienckim z bezpiecznym rozruchem, API partnerskie lub zewnętrzne itd. „Zaufany” oznacza brak obaw, że niezaufany użytkownik będzie w stanie ominąć lub pominąć tę warstwę albo mechanizmy w niej zaimplementowane.
-* **Uniform Resource Identifier** (URI) – unikalny ciąg znaków identyfikujący zasób, taki jak strona internetowa, adres pocztowy czy miejsce.
+* **Uniform Resource Identifier** (URI) – unikalny ciąg znaków identyfikujący zasób, taki jak strona internetowa, adres e-mail czy miejsce.
 * **Uniform Resource Locator** (URL) – ciąg znaków określający lokalizację zasobu w Internecie.
 * **Universally Unique Identifier** (UUID) – unikalny numer referencyjny używany jako identyfikator w oprogramowaniu.
 * **Verifier** (weryfikator) – osoba lub zespół dokonujący przeglądu aplikacji względem wymagań OWASP ASVS.
@@ -86,3 +86,4 @@
 * **WebSocket over TLS** (WSS) – praktyka zabezpieczania komunikacji WebSocket poprzez warstwowe umieszczenie WebSocket nad protokołem TLS.
 * **What You See Is What You Get** (WYSIWYG) – typ edytora treści wzbogaconej pokazujący, jak treść będzie faktycznie wyglądać po wyrenderowaniu, zamiast pokazywać kod sterujący renderowaniem.
 * **X.509 Certificate** (certyfikat X.509) – certyfikat cyfrowy wykorzystujący szeroko przyjęty międzynarodowy standard infrastruktury klucza publicznego (PKI) X.509 do weryfikacji, że klucz publiczny należy do tożsamości użytkownika, komputera lub usługi zawartej w certyfikacie.
+* **XML eXternal Entity** (XXE) – typ encji XML, która może uzyskiwać dostęp do treści lokalnych lub zdalnych poprzez zadeklarowany identyfikator systemowy. Może to prowadzić do różnych ataków typu wstrzyknięcie.

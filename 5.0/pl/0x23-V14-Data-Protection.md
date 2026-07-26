@@ -40,7 +40,7 @@ Ta sekcja zawiera wymagania zapobiegające wyciekom danych w określony sposób 
 
 | # | Opis | Poziom |
 | :---: | :--- | :---: |
-| **14.3.1** | Zweryfikuj, że uwierzytelnione dane są czyszczone z pamięci klienta, takiej jak DOM przeglądarki, po zakończeniu działania klienta lub sesji. Pomocne może być pole nagłówka odpowiedzi HTTP 'Clear-Site-Data', ale strona kliencka powinna również umieć posprzątać samodzielnie, jeśli połączenie z serwerem jest niedostępne w chwili kończenia sesji. | 1 |
+| **14.3.1** | Zweryfikuj, że uwierzytelnione dane są czyszczone z pamięci klienta, takiej jak DOM przeglądarki, po zakończeniu działania klienta lub sesji. Pomocne może być pole nagłówka odpowiedzi HTTP 'Clear-Site-Data', ale strona kliencka powinna również potrafić samodzielnie wyczyścić dane, jeśli połączenie z serwerem jest niedostępne w chwili kończenia sesji. | 1 |
 | **14.3.2** | Zweryfikuj, że aplikacja ustawia wystarczające pola nagłówka odpowiedzi HTTP zapobiegające buforowaniu (tj. Cache-Control: no-store), aby dane wrażliwe nie były buforowane w przeglądarkach. | 2 |
 | **14.3.3** | Zweryfikuj, że dane przechowywane w pamięci przeglądarki (takiej jak localStorage, sessionStorage, IndexedDB czy ciasteczka) nie zawierają danych wrażliwych, z wyjątkiem tokenów sesji. | 2 |
 

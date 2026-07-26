@@ -18,7 +18,7 @@ Ta sekcja zawiera wymagania zapewniające, że token został wytworzony przez za
 
 ## V9.2 Zawartość tokena
 
-Przed podjęciem decyzji bezpieczeństwa na podstawie zawartości tokena samowystarczalnego konieczna jest walidacja, że token został przedstawiony w swoim okresie ważności oraz że jest przeznaczony do użytku przez usługę odbierającą i w celu, w jakim został przedstawiony. Pomaga to uniknąć niebezpiecznego użycia krzyżowego między różnymi usługami lub z różnymi typami tokenów od tego samego wystawcy.
+Przed podjęciem decyzji bezpieczeństwa na podstawie zawartości tokena samowystarczalnego konieczna jest walidacja, że token został przedstawiony w swoim okresie ważności oraz że jest przeznaczony do użytku przez usługę odbierającą i w celu, w jakim został przedstawiony. Pomaga to uniknąć niebezpiecznego mieszania tokenów między różnymi usługami lub z różnymi typami tokenów od tego samego wystawcy.
 
 Szczegółowe wymagania dla OAuth i OIDC omówiono w dedykowanym rozdziale.
 

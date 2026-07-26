@@ -99,7 +99,7 @@ Zatwierdzone tryby wymieniono w kolejności preferencji.
 
 Uwagi:
 
-* Wszystkie zaszyfrowane komunikaty muszą być uwierzytelnione. Dla KAŻDEGO użycia trybu CBC MUSI istnieć powiązany algorytm haszującego MAC walidujący komunikat. Zasadniczo MUSI to być stosowane w metodzie Encrypt-Then-Hash (choć TLS 1.2 używa zamiast tego Hash-Then-Encrypt). Jeśli nie można tego zagwarantować, CBC NIE MOŻE być używany. Jedynym zastosowaniem, w którym dozwolone jest szyfrowanie bez algorytmu MAC, jest szyfrowanie dysków.
+* Wszystkie zaszyfrowane komunikaty muszą być uwierzytelnione. Dla KAŻDEGO użycia trybu CBC MUSI istnieć powiązany algorytm MAC oparty na funkcji skrótu, walidujący komunikat. Zasadniczo MUSI to być stosowane w metodzie Encrypt-Then-Hash (choć TLS 1.2 używa zamiast tego Hash-Then-Encrypt). Jeśli nie można tego zagwarantować, CBC NIE MOŻE być używany. Jedynym zastosowaniem, w którym dozwolone jest szyfrowanie bez algorytmu MAC, jest szyfrowanie dysków.
 * Jeśli używany jest CBC, należy zagwarantować, że weryfikacja dopełnienia jest wykonywana w czasie stałym.
 * Przy stosowaniu CCM-8 znacznik MAC ma jedynie 64 bity bezpieczeństwa. Nie spełnia to wymagania 11.2.3, które wymaga co najmniej 128 bitów bezpieczeństwa.
 * Szyfrowanie dysków jest uznawane za pozostające poza zakresem ASVS. Dlatego niniejszy załącznik nie wymienia żadnej zatwierdzonej metody szyfrowania dysków. Dla tego zastosowania szyfrowanie bez uwierzytelniania jest zwykle akceptowane i typowo stosowane są tryby XTS, XEX oraz LRW.
