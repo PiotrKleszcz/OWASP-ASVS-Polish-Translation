@@ -34,9 +34,9 @@ Terminologia użyta w tym rozdziale jest zgodna z RFC OAuth i specyfikacjami OID
 
 W kontekście OAuth i OIDC termin „token” w tym rozdziale odnosi się do:
 
-* Tokenów dostępu, które mogą być wykorzystywane wyłącznie przez RS i mogą być tokenami referencyjnymi walidowanymi poprzez introspekcję albo tokenami samowystarczalnymi walidowanymi z użyciem materiału klucza.
-* Tokenów odświeżania, które mogą być wykorzystywane wyłącznie przez serwer autoryzacji, który je wystawił.
-* Tokenów ID OIDC, które mogą być wykorzystywane wyłącznie przez klienta, który zainicjował przepływ autoryzacji.
+* Tokenów dostępu, które mogą być konsumowane wyłącznie przez RS i mogą być tokenami referencyjnymi walidowanymi poprzez introspekcję albo tokenami samowystarczalnymi walidowanymi z użyciem materiału klucza.
+* Tokenów odświeżania, które mogą być konsumowane wyłącznie przez serwer autoryzacji, który je wystawił.
+* Tokenów ID OIDC, które mogą być konsumowane wyłącznie przez klienta, który zainicjował przepływ autoryzacji.
 
 Poziomy ryzyka niektórych wymagań tego rozdziału zależą od tego, czy klient jest klientem poufnym, czy uznawany jest za klienta publicznego. Ponieważ silne uwierzytelnianie klienta ogranicza wiele wektorów ataku, kilka wymagań może zostać złagodzonych przy stosowaniu klienta poufnego w aplikacjach L1.
 
