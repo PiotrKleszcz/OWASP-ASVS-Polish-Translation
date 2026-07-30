@@ -86,4 +86,4 @@
 * **WebSocket over TLS** (WSS) – praktyka zabezpieczania komunikacji WebSocket poprzez warstwowe umieszczenie WebSocket nad protokołem TLS.
 * **What You See Is What You Get** (WYSIWYG) – typ edytora treści wzbogaconej pokazujący, jak treść będzie faktycznie wyglądać po wyrenderowaniu, zamiast pokazywać kod sterujący renderowaniem.
 * **X.509 Certificate** (certyfikat X.509) – certyfikat cyfrowy wykorzystujący szeroko przyjęty międzynarodowy standard infrastruktury klucza publicznego (PKI) X.509 do weryfikacji, że klucz publiczny należy do tożsamości użytkownika, komputera lub usługi zawartej w certyfikacie.
-* **XML eXternal Entity** (XXE) – typ encji XML, która może uzyskiwać dostęp do treści lokalnych lub zdalnych poprzez zadeklarowany identyfikator systemowy. Może to prowadzić do różnych ataków typu wstrzyknięcie.
+* **XML eXternal Entity** (XXE) – typ encji XML, która może uzyskiwać dostęp do treści lokalnych lub zdalnych poprzez zadeklarowany identyfikator systemowy. Może to prowadzić do różnych ataków typu wstrzyknięcia.
