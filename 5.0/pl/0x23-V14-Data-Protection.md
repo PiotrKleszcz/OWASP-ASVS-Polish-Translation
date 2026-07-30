@@ -6,7 +6,7 @@ Aplikacje nie są w stanie przewidzieć wszystkich wzorców użycia i zachowań 
 
 Niniejszy rozdział zawiera wymagania związane z określeniem, jakie dane wymagają ochrony, jak należy je chronić, oraz konkretne mechanizmy do wdrożenia lub pułapki, których należy unikać.
 
-Kolejną kwestią ochrony danych jest masowa ekstrakcja, modyfikacja lub nadmierne użycie. Wymagania każdego systemu będą zapewne bardzo różne, dlatego ustalenie, co jest „nienormalne", musi uwzględniać model zagrożeń i ryzyko biznesowe. Z perspektywy ASVS wykrywanie tych problemów jest omawiane w rozdziale „Logowanie zdarzeń bezpieczeństwa i obsługa błędów", a ustalanie limitów — w rozdziale „Walidacja i logika biznesowa".
+Kolejną kwestią ochrony danych jest masowa ekstrakcja, modyfikacja lub nadmierne użycie. Wymagania każdego systemu będą zapewne bardzo różne, dlatego ustalenie, co jest „nienormalne”, musi uwzględniać model zagrożeń i ryzyko biznesowe. Z perspektywy ASVS wykrywanie tych problemów jest omawiane w rozdziale „Logowanie zdarzeń bezpieczeństwa i obsługa błędów”, a ustalanie limitów — w rozdziale „Walidacja i logika biznesowa”.
 
 ## V14.1 Dokumentacja ochrony danych
 
@@ -40,7 +40,7 @@ Ta sekcja zawiera wymagania zapobiegające wyciekom danych w określony sposób 
 
 | # | Opis | Poziom |
 | :---: | :--- | :---: |
-| **14.3.1** | Zweryfikuj, że uwierzytelnione dane są czyszczone z pamięci klienta, takiej jak DOM przeglądarki, po zakończeniu działania klienta lub sesji. Pomocne może być pole nagłówka odpowiedzi HTTP 'Clear-Site-Data', ale strona kliencka powinna również umieć posprzątać samodzielnie, jeśli połączenie z serwerem jest niedostępne w chwili kończenia sesji. | 1 |
+| **14.3.1** | Zweryfikuj, że uwierzytelnione dane są czyszczone z pamięci klienta, takiej jak DOM przeglądarki, po zakończeniu działania klienta lub sesji. Pomocne może być pole nagłówka odpowiedzi HTTP 'Clear-Site-Data', ale strona kliencka powinna również potrafić samodzielnie wyczyścić dane, jeśli połączenie z serwerem jest niedostępne w chwili kończenia sesji. | 1 |
 | **14.3.2** | Zweryfikuj, że aplikacja ustawia wystarczające pola nagłówka odpowiedzi HTTP zapobiegające buforowaniu (tj. Cache-Control: no-store), aby dane wrażliwe nie były buforowane w przeglądarkach. | 2 |
 | **14.3.3** | Zweryfikuj, że dane przechowywane w pamięci przeglądarki (takiej jak localStorage, sessionStorage, IndexedDB czy ciasteczka) nie zawierają danych wrażliwych, z wyjątkiem tokenów sesji. | 2 |
 
@@ -56,5 +56,5 @@ Więcej informacji można znaleźć w następujących materiałach:
 * [Australian Privacy Principle 11 - Security of personal information](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information)
 * [Przegląd unijnego ogólnego rozporządzenia o ochronie danych (RODO)](https://www.edps.europa.eu/data-protection_en)
 * [Europejski Inspektor Ochrony Danych — Internet Privacy Engineering Network](https://www.edps.europa.eu/data-protection/ipen-internet-privacy-engineering-network_en)
-* [Informacje o nagłówku „Clear-Site-Data"](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data)
+* [Informacje o nagłówku „Clear-Site-Data”](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data)
 * [White paper o Web Cache Deception](https://www.blackhat.com/docs/us-17/wednesday/us-17-Gil-Web-Cache-Deception-Attack-wp.pdf)

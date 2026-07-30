@@ -24,7 +24,7 @@ OAuth i OIDC zostały pierwotnie zaprojektowane dla aplikacji stron trzecich. Ob
 
 OAuth i OIDC mogą być stosowane w wielu typach aplikacji, ale ASVS i wymagania tego rozdziału koncentrują się na aplikacjach internetowych i API.
 
-Ponieważ OAuth i OIDC można traktować jako logikę zbudowaną na technologiach webowych, ogólne wymagania z pozostałych rozdziałów zawsze mają zastosowanie, a tego rozdziału nie można wyrywać z kontekstu.
+Ponieważ OAuth i OIDC można traktować jako logikę zbudowaną na technologiach webowych, ogólne wymagania z pozostałych rozdziałów zawsze mają zastosowanie, a tego rozdziału nie można rozpatrywać w oderwaniu od kontekstu.
 
 Niniejszy rozdział odzwierciedla aktualne najlepsze praktyki dla OAuth2 i OIDC, zgodne ze specyfikacjami dostępnymi pod adresami <https://oauth.net/2/> oraz <https://openid.net/developers/specs/>. Nawet jeśli RFC są uznawane za dojrzałe, są często aktualizowane — dlatego stosując wymagania tego rozdziału, ważne jest trzymanie się najnowszych wersji. Więcej szczegółów w sekcji źródeł.
 
@@ -32,7 +32,7 @@ Zważywszy na złożoność tego obszaru, dla bezpiecznego rozwiązania OAuth lu
 
 Terminologia użyta w tym rozdziale jest zgodna z RFC OAuth i specyfikacjami OIDC, przy czym terminologia OIDC jest używana wyłącznie w wymaganiach specyficznych dla OIDC; w pozostałych przypadkach stosowana jest terminologia OAuth.
 
-W kontekście OAuth i OIDC termin „token" w tym rozdziale odnosi się do:
+W kontekście OAuth i OIDC termin „token” w tym rozdziale odnosi się do:
 
 * Tokenów dostępu, które mogą być konsumowane wyłącznie przez RS i mogą być tokenami referencyjnymi walidowanymi poprzez introspekcję albo tokenami samowystarczalnymi walidowanymi z użyciem materiału klucza.
 * Tokenów odświeżania, które mogą być konsumowane wyłącznie przez serwer autoryzacji, który je wystawił.
@@ -105,9 +105,9 @@ Dla uwierzytelniania klienta dozwolona jest metoda 'self_signed_tls_client_auth'
 
 ## V10.5 Klient OIDC
 
-Ponieważ strona ufająca OIDC działa jako klient OAuth, zastosowanie mają również wymagania z sekcji „Klient OAuth".
+Ponieważ strona ufająca OIDC działa jako klient OAuth, zastosowanie mają również wymagania z sekcji „Klient OAuth”.
 
-Zwróć uwagę, że sekcja „Uwierzytelnianie z dostawcą tożsamości" w rozdziale „Uwierzytelnianie" również zawiera istotne wymagania ogólne.
+Zwróć uwagę, że sekcja „Uwierzytelnianie z dostawcą tożsamości” w rozdziale „Uwierzytelnianie” również zawiera istotne wymagania ogólne.
 
 | # | Opis | Poziom |
 | :---: | :--- | :---: |
@@ -119,7 +119,7 @@ Zwróć uwagę, że sekcja „Uwierzytelnianie z dostawcą tożsamości" w rozdz
 
 ## V10.6 Dostawca OpenID
 
-Ponieważ dostawcy OpenID działają jako serwery autoryzacji OAuth, zastosowanie mają również wymagania z sekcji „Serwer autoryzacji OAuth".
+Ponieważ dostawcy OpenID działają jako serwery autoryzacji OAuth, zastosowanie mają również wymagania z sekcji „Serwer autoryzacji OAuth”.
 
 Zwróć uwagę, że przy stosowaniu przepływu tokena ID (a nie przepływu kodu) tokeny dostępu nie są wystawiane i wiele wymagań dla serwera autoryzacji OAuth nie ma zastosowania.
 

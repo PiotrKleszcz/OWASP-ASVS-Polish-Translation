@@ -10,13 +10,13 @@ Celem tego rozdziału jest zdefiniowanie najlepszych praktyk ogólnego stosowani
 * Regularnej oceny krajobrazu kryptograficznego w celu analizy nowych ryzyk i odpowiedniego dostosowywania algorytmów.
 * Wykrywania i zarządzania przypadkami użycia kryptografii w całym cyklu życia aplikacji, aby wszystkie zasoby kryptograficzne były zewidencjonowane i zabezpieczone.
 
-Oprócz przedstawienia ogólnych zasad i najlepszych praktyk dokument zawiera również bardziej szczegółowe informacje techniczne o wymaganiach w Załączniku C — Standardy kryptograficzne. Obejmuje to algorytmy i tryby uznawane za „zatwierdzone" na potrzeby wymagań tego rozdziału.
+Oprócz przedstawienia ogólnych zasad i najlepszych praktyk dokument zawiera również bardziej szczegółowe informacje techniczne o wymaganiach w Załączniku C — Standardy kryptograficzne. Obejmuje to algorytmy i tryby uznawane za „zatwierdzone” na potrzeby wymagań tego rozdziału.
 
 Wymagania wykorzystujące kryptografię do rozwiązania odrębnego problemu — takiego jak zarządzanie sekretami czy bezpieczeństwo komunikacji — znajdują się w innych częściach standardu.
 
 ## V11.1 Inwentarz kryptograficzny i dokumentacja
 
-Aplikacje muszą być projektowane z silną architekturą kryptograficzną, chroniącą zasoby danych stosownie do ich klasyfikacji. Szyfrowanie wszystkiego jest marnotrawstwem; nieszyfrowanie niczego to prawne zaniedbanie. Należy znaleźć równowagę — zwykle na etapie projektowania architektury lub projektu wysokopoziomowego, sprintów projektowych albo tzw. architectural spikes. Projektowanie kryptografii „na bieżąco" lub jej późniejsze doszywanie nieuchronnie będzie kosztować znacznie więcej niż wbudowanie jej od samego początku.
+Aplikacje muszą być projektowane z silną architekturą kryptograficzną, chroniącą zasoby danych stosownie do ich klasyfikacji. Szyfrowanie wszystkiego jest marnotrawstwem; nieszyfrowanie niczego to prawne zaniedbanie. Należy znaleźć równowagę — zwykle na etapie projektowania architektury lub projektu wysokopoziomowego, sprintów projektowych albo tzw. architectural spikes. Projektowanie kryptografii „na bieżąco” lub jej późniejsze doszywanie nieuchronnie będzie kosztować znacznie więcej niż wbudowanie jej od samego początku.
 
 Ważne jest zapewnienie, że wszystkie zasoby kryptograficzne są regularnie wykrywane, inwentaryzowane i oceniane. Więcej informacji o tym, jak można to zrobić, znajduje się w załączniku.
 
@@ -40,7 +40,7 @@ Ta sekcja definiuje wymagania dotyczące wyboru, implementacji i bieżącego zar
 | **11.2.1** | Zweryfikuj, że do operacji kryptograficznych używane są implementacje zweryfikowane branżowo (w tym biblioteki i implementacje akcelerowane sprzętowo). | 2 |
 | **11.2.2** | Zweryfikuj, że aplikacja została zaprojektowana z zachowaniem zwinności kryptograficznej (crypto agility) — tak aby algorytmy liczb losowych, szyfrowania uwierzytelnionego, MAC lub haszowania, długości kluczy, liczby rund, szyfry i tryby mogły być w dowolnym momencie rekonfigurowane, aktualizowane lub wymieniane, w celu ochrony przed złamaniami kryptograficznymi. Analogicznie musi istnieć możliwość wymiany kluczy i haseł oraz ponownego zaszyfrowania danych. Pozwoli to na płynne przejście na kryptografię postkwantową (PQC), gdy szeroko dostępne staną się wysokopewne implementacje zatwierdzonych schematów lub standardów PQC. | 2 |
 | **11.2.3** | Zweryfikuj, że wszystkie prymitywy kryptograficzne zapewniają co najmniej 128 bitów bezpieczeństwa, biorąc pod uwagę algorytm, rozmiar klucza i konfigurację. Na przykład 256-bitowy klucz ECC zapewnia około 128 bitów bezpieczeństwa, podczas gdy RSA wymaga klucza 3072-bitowego, aby osiągnąć 128 bitów bezpieczeństwa. | 2 |
-| **11.2.4** | Zweryfikuj, że wszystkie operacje kryptograficzne są wykonywane w czasie stałym, bez operacji „skracających" (short-circuit) w porównaniach, obliczeniach i zwracanych wartościach, aby uniknąć wycieku informacji. | 3 |
+| **11.2.4** | Zweryfikuj, że wszystkie operacje kryptograficzne są wykonywane w czasie stałym, bez operacji „skracających” (short-circuit) w porównaniach, obliczeniach i zwracanych wartościach, aby uniknąć wycieku informacji. | 3 |
 | **11.2.5** | Zweryfikuj, że wszystkie moduły kryptograficzne zawodzą w sposób bezpieczny, a błędy są obsługiwane tak, aby nie umożliwiały podatności, takich jak ataki Padding Oracle. | 3 |
 
 ## V11.3 Algorytmy szyfrowania
@@ -64,7 +64,7 @@ W kwestii przechowywania haseł — obok załącznika kryptograficznego — uży
 | # | Opis | Poziom |
 | :---: | :--- | :---: |
 | **11.4.1** | Zweryfikuj, że dla ogólnych kryptograficznych przypadków użycia — w tym podpisów cyfrowych, HMAC, KDF i generowania losowych bitów — używane są wyłącznie zatwierdzone funkcje skrótu. Niedozwolone funkcje skrótu, takie jak MD5, nie mogą być używane do żadnych celów kryptograficznych. | 1 |
-| **11.4.2** | Zweryfikuj, że hasła są przechowywane z użyciem zatwierdzonej, wymagającej obliczeniowo funkcji wyprowadzania klucza (znanej też jako „funkcja haszowania haseł"), z parametrami skonfigurowanymi zgodnie z aktualnymi wytycznymi. Ustawienia powinny równoważyć bezpieczeństwo i wydajność tak, aby ataki siłowe były wystarczająco trudne dla wymaganego poziomu bezpieczeństwa. | 2 |
+| **11.4.2** | Zweryfikuj, że hasła są przechowywane z użyciem zatwierdzonej, wymagającej obliczeniowo funkcji wyprowadzania klucza (znanej też jako „funkcja haszowania haseł”), z parametrami skonfigurowanymi zgodnie z aktualnymi wytycznymi. Ustawienia powinny równoważyć bezpieczeństwo i wydajność tak, aby ataki siłowe były wystarczająco trudne dla wymaganego poziomu bezpieczeństwa. | 2 |
 | **11.4.3** | Zweryfikuj, że funkcje skrótu używane w podpisach cyfrowych, jako element uwierzytelniania danych lub ich integralności, są odporne na kolizje i mają odpowiednie długości bitowe. Jeśli wymagana jest odporność na kolizje, długość wyjścia musi wynosić co najmniej 256 bitów. Jeśli wymagana jest wyłącznie odporność na ataki drugiego przeciwobrazu (second pre-image), długość wyjścia musi wynosić co najmniej 128 bitów. | 2 |
 | **11.4.4** | Zweryfikuj, że aplikacja używa zatwierdzonych funkcji wyprowadzania klucza z parametrami rozciągania klucza (key stretching) przy wyprowadzaniu kluczy tajnych z haseł. Stosowane parametry muszą równoważyć bezpieczeństwo i wydajność, aby ataki siłowe nie mogły skompromitować wynikowego klucza kryptograficznego. | 2 |
 
@@ -81,12 +81,12 @@ Kryptograficznie bezpieczne generowanie liczb pseudolosowych (CSPRNG) jest niezw
 
 Kryptografia klucza publicznego znajduje zastosowanie tam, gdzie współdzielenie klucza tajnego między wieloma stronami nie jest możliwe lub pożądane.
 
-W ramach tego istnieje potrzeba stosowania zatwierdzonych mechanizmów wymiany kluczy, takich jak Diffie-Hellman i Elliptic Curve Diffie-Hellman (ECDH), aby kryptosystem pozostał bezpieczny wobec współczesnych zagrożeń. Rozdział „Bezpieczna komunikacja" zawiera wymagania dotyczące TLS, dlatego wymagania tej sekcji są przeznaczone dla sytuacji, w których kryptografia klucza publicznego jest wykorzystywana w przypadkach użycia innych niż TLS.
+W ramach tego istnieje potrzeba stosowania zatwierdzonych mechanizmów wymiany kluczy, takich jak Diffie-Hellman i Elliptic Curve Diffie-Hellman (ECDH), aby kryptosystem pozostał bezpieczny wobec współczesnych zagrożeń. Rozdział „Bezpieczna komunikacja” zawiera wymagania dotyczące TLS, dlatego wymagania tej sekcji są przeznaczone dla sytuacji, w których kryptografia klucza publicznego jest wykorzystywana w przypadkach użycia innych niż TLS.
 
 | # | Opis | Poziom |
 | :---: | :--- | :---: |
 | **11.6.1** | Zweryfikuj, że do generowania kluczy i zasilania generatora (seeding) oraz do generowania i weryfikacji podpisów cyfrowych używane są wyłącznie zatwierdzone algorytmy kryptograficzne i tryby działania. Algorytmy generowania kluczy nie mogą generować kluczy niebezpiecznych, podatnych na znane ataki — na przykład kluczy RSA podatnych na faktoryzację Fermata. | 2 |
-| **11.6.2** | Zweryfikuj, że do wymiany kluczy używane są zatwierdzone algorytmy kryptograficzne (takie jak Diffie-Hellman), ze szczególnym naciskiem na to, aby mechanizmy wymiany kluczy używały bezpiecznych parametrów. Zapobiegnie to atakom na proces ustanawiania klucza, które mogłyby prowadzić do ataków adversary-in-the-middle lub złamań kryptograficznych. | 3 |
+| **11.6.2** | Zweryfikuj, że do wymiany kluczy używane są zatwierdzone algorytmy kryptograficzne (takie jak Diffie-Hellman), ze szczególnym naciskiem na to, aby mechanizmy wymiany kluczy używały bezpiecznych parametrów. Zapobiegnie to atakom na proces ustanawiania klucza, które mogłyby prowadzić do ataków typu adversary-in-the-middle lub złamań kryptograficznych. | 3 |
 
 ## V11.7 Kryptografia danych w użyciu
 

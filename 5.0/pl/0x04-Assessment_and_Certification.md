@@ -12,7 +12,7 @@ ASVS celowo nie narzuca dokładnego sposobu weryfikacji zgodności na poziomie p
 
 ### Raportowanie weryfikacji
 
-Tradycyjne raporty z testów penetracyjnych zgłaszają problemy „przez wyjątek", wymieniając wyłącznie niespełnione wymagania. Natomiast raport certyfikacyjny ASVS powinien zawierać zakres, podsumowanie wszystkich sprawdzonych wymagań, wymagania, przy których odnotowano wyjątki, oraz wskazówki dotyczące rozwiązania problemów. Niektóre wymagania mogą nie mieć zastosowania (np. zarządzanie sesją w bezstanowych API) — musi to zostać odnotowane w raporcie.
+Tradycyjne raporty z testów penetracyjnych zgłaszają problemy „przez wyjątek”, wymieniając wyłącznie niespełnione wymagania. Natomiast raport certyfikacyjny ASVS powinien zawierać zakres, podsumowanie wszystkich sprawdzonych wymagań, wymagania, przy których odnotowano wyjątki, oraz wskazówki dotyczące rozwiązania problemów. Niektóre wymagania mogą nie mieć zastosowania (np. zarządzanie sesją w bezstanowych API) — musi to zostać odnotowane w raporcie.
 
 ### Zakres weryfikacji
 
@@ -40,7 +40,7 @@ Podsumowując: testowalne za pomocą automatyzacji != uruchomienie gotowego narz
 
 #### Rola testów penetracyjnych
 
-Choć poziom L1 w wersji 4.0 był zoptymalizowany pod kątem testowania „czarnoskrzynkowego" (bez dokumentacji i bez kodu źródłowego), już wtedy standard jasno wskazywał, że nie jest to skuteczne działanie poświadczające i powinno być aktywnie odradzane.
+Choć poziom L1 w wersji 4.0 był zoptymalizowany pod kątem testowania „czarnoskrzynkowego” (bez dokumentacji i bez kodu źródłowego), już wtedy standard jasno wskazywał, że nie jest to skuteczne działanie poświadczające i powinno być aktywnie odradzane.
 
 Testowanie bez dostępu do niezbędnych dodatkowych informacji jest niewydajnym i nieskutecznym mechanizmem weryfikacji bezpieczeństwa, ponieważ pomija możliwość przeglądu kodu źródłowego, identyfikacji zagrożeń i brakujących mechanizmów oraz przeprowadzenia znacznie dokładniejszego testu w krótszym czasie.
 

@@ -65,7 +65,7 @@ Choć wytyczne te pozostają ważnym punktem odniesienia, ścisłe dopasowanie r
 
 ## Nowe podejście do definicji poziomów
 
-Wersja 4.x opisywała poziomy jako L1 („Minimalny"), L2 („Standardowy") i L3 („Zaawansowany"), sugerując, że wszystkie aplikacje przetwarzające dane wrażliwe powinny spełniać co najmniej L2.
+Wersja 4.x opisywała poziomy jako L1 („Minimalny”), L2 („Standardowy”) i L3 („Zaawansowany”), sugerując, że wszystkie aplikacje przetwarzające dane wrażliwe powinny spełniać co najmniej L2.
 
 Wersja 5.0 rozwiązuje kilka problemów związanych z tym podejściem, które opisano w kolejnych akapitach.
 
@@ -73,11 +73,11 @@ Od strony praktycznej: podczas gdy wersja 4.x używała symboli zaznaczenia jako
 
 ### Łatwiejszy poziom wejściowy
 
-Opinie użytkowników wskazywały, że duża liczba wymagań poziomu 1 (~120) w połączeniu z określeniem go jako poziomu „minimalnego", niewystarczającego dla większości aplikacji, zniechęcała do przyjęcia standardu. Wersja 5.0 obniża ten próg, definiując poziom 1 przede wszystkim wokół wymagań pierwszej warstwy obrony, co przekłada się na jaśniejsze i mniej liczne wymagania na tym poziomie. Ujmując to liczbowo: w wersji 4.0.3 istniało 128 wymagań L1 na łącznie 278 wymagań, co stanowiło 46%. W wersji 5.0.0 jest 70 wymagań L1 na łącznie 345 wymagań, co stanowi 20%.
+Opinie użytkowników wskazywały, że duża liczba wymagań poziomu 1 (~120) w połączeniu z określeniem go jako poziomu „minimalnego”, niewystarczającego dla większości aplikacji, zniechęcała do przyjęcia standardu. Wersja 5.0 obniża ten próg, definiując poziom 1 przede wszystkim wokół wymagań pierwszej warstwy obrony, co przekłada się na jaśniejsze i mniej liczne wymagania na tym poziomie. Ujmując to liczbowo: w wersji 4.0.3 istniało 128 wymagań L1 na łącznie 278 wymagań, co stanowiło 46%. W wersji 5.0.0 jest 70 wymagań L1 na łącznie 345 wymagań, co stanowi 20%.
 
 ### Złudzenie testowalności
 
-Kluczowym czynnikiem doboru mechanizmów do poziomu 1 w wersji 4.x była ich przydatność do oceny w drodze zewnętrznych testów penetracyjnych „czarnoskrzynkowych". Podejście to nie było jednak w pełni zgodne z przeznaczeniem poziomu 1 jako minimalnego zestawu mechanizmów bezpieczeństwa. Część użytkowników uważała, że poziom 1 nie wystarcza do zabezpieczenia aplikacji, inni z kolei uznawali go za zbyt trudny do przetestowania.
+Kluczowym czynnikiem doboru mechanizmów do poziomu 1 w wersji 4.x była ich przydatność do oceny w drodze zewnętrznych testów penetracyjnych „czarnoskrzynkowych”. Podejście to nie było jednak w pełni zgodne z przeznaczeniem poziomu 1 jako minimalnego zestawu mechanizmów bezpieczeństwa. Część użytkowników uważała, że poziom 1 nie wystarcza do zabezpieczenia aplikacji, inni z kolei uznawali go za zbyt trudny do przetestowania.
 
 Opieranie się na testowalności jako kryterium jest zarówno względne, jak i miejscami mylące. To, że wymaganie jest testowalne, nie gwarantuje, że można je przetestować w sposób zautomatyzowany lub prosty. Co więcej, wymagania najłatwiejsze do przetestowania nie zawsze mają największy wpływ na bezpieczeństwo ani nie są najprostsze do wdrożenia.
 

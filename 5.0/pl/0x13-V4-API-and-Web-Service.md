@@ -16,7 +16,7 @@ Ta sekcja dotyczy ogólnych kwestii bezpieczeństwa usług sieciowych, a co za t
 | **4.1.2** | Zweryfikuj, że wyłącznie endpointy skierowane do użytkownika (przeznaczone do ręcznego dostępu przez przeglądarkę) automatycznie przekierowują z HTTP na HTTPS, natomiast pozostałe usługi i endpointy nie stosują przezroczystych przekierowań. Ma to zapobiec sytuacji, w której klient błędnie wysyła nieszyfrowane żądania HTTP, lecz — ponieważ żądania są automatycznie przekierowywane na HTTPS — wyciek danych wrażliwych pozostaje niewykryty. | 2 |
 | **4.1.3** | Zweryfikuj, że żadne pole nagłówka HTTP używane przez aplikację i ustawiane przez warstwę pośredniczącą — taką jak moduł równoważenia obciążenia, proxy webowe lub usługa backend-for-frontend — nie może zostać nadpisane przez użytkownika końcowego. Przykładowe nagłówki to X-Real-IP, X-Forwarded-* lub X-User-ID. | 2 |
 | **4.1.4** | Zweryfikuj, że mogą być używane wyłącznie metody HTTP jawnie wspierane przez aplikację lub jej API (w tym OPTIONS podczas żądań preflight), a metody nieużywane są blokowane. | 3 |
-| **4.1.5** | Zweryfikuj, że dla żądań lub transakcji wysoce wrażliwych albo przechodzących przez wiele systemów stosowane są podpisy cyfrowe per komunikat, zapewniające dodatkową pewność ponad zabezpieczenia warstwy transportowej. | 3 |
+| **4.1.5** | Zweryfikuj, że dla żądań lub transakcji wysoce wrażliwych albo przechodzących przez wiele systemów stosowane są podpisy cyfrowe dla poszczególnych komunikatów, zapewniające dodatkową pewność ponad zabezpieczenia warstwy transportowej. | 3 |
 
 ## V4.2 Walidacja struktury komunikatów HTTP
 

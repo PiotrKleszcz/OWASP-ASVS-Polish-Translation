@@ -14,7 +14,7 @@ ASVS 5.0 jest wynikiem szerokiego zaangażowania liderów projektu, członków g
 
 Ta gruntowna rewizja została opracowana z myślą o kilku kluczowych zasadach:
 
-* Doprecyzowany zakres i ukierunkowanie: Ta wersja standardu została zaprojektowana tak, aby ściślej odpowiadać filarom zawartym w jego nazwie: Aplikacja, Bezpieczeństwo, Weryfikacja i Standard. Wymagania zostały przeredagowane w taki sposób, aby kłaść nacisk na zapobieganie błędom bezpieczeństwa, a nie narzucać konkretne rozwiązania techniczne. Treść wymagań ma być zrozumiała sama w sobie i wyjaśniać, dlaczego dane wymaganie istnieje.
+* Doprecyzowany zakres i ukierunkowanie: Ta wersja standardu została zaprojektowana tak, aby ściślej odpowiadać filarom zawartym w jego nazwie: Aplikacja, Bezpieczeństwo, Weryfikacja i Standard. Wymagania zostały przeredagowane w taki sposób, aby kłaść nacisk na zapobieganie lukom bezpieczeństwa, a nie narzucać konkretne rozwiązania techniczne. Treść wymagań ma być zrozumiała sama w sobie i wyjaśniać, dlaczego dane wymaganie istnieje.
 
 * Wsparcie dla udokumentowanych decyzji dotyczących bezpieczeństwa: ASVS 5.0 wprowadza wymagania dotyczące dokumentowania kluczowych decyzji z zakresu bezpieczeństwa. Zwiększa to identyfikowalność i wspiera wdrożenia uwzględniające kontekst, pozwalając organizacjom dostosować swój poziom bezpieczeństwa do własnych potrzeb i ryzyk.
 

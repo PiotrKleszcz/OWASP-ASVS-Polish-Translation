@@ -7,18 +7,18 @@ Mechanizmy zarządzania sesją pozwalają aplikacjom korelować interakcje użyt
 * Sesje są unikalne dla każdej osoby i nie mogą być odgadnięte ani współdzielone.
 * Sesje są unieważniane, gdy nie są już potrzebne, oraz wygasają po okresach bezczynności.
 
-Wiele wymagań tego rozdziału odnosi się do wybranych mechanizmów [NIST SP 800-63 Digital Identity Guidelines](https://pages.nist.gov/800-63-4/), koncentrując się na powszechnych zagrożeniach i często wykorzystywanych słabościach uwierzytelniania.
+Wiele wymagań tego rozdziału odnosi się do wybranych mechanizmów [NIST SP 800-63 Digital Identity Guidelines](https://pages.nist.gov/800-63-4/), koncentrując się na powszechnych zagrożeniach i często wykorzystywanych lukach w uwierzytelnianiu.
 
 Warto zauważyć, że wymagania dotyczące konkretnych szczegółów implementacyjnych niektórych mechanizmów zarządzania sesją znajdują się w innych miejscach:
 
-* Ciasteczka HTTP to powszechny mechanizm zabezpieczania tokenów sesji. Szczegółowe wymagania bezpieczeństwa dla ciasteczek znajdują się w rozdziale „Bezpieczeństwo frontendu webowego".
-* Tokeny samowystarczalne są często używane jako sposób utrzymywania sesji. Szczegółowe wymagania bezpieczeństwa znajdują się w rozdziale „Tokeny samowystarczalne".
+* Ciasteczka HTTP to powszechny mechanizm zabezpieczania tokenów sesji. Szczegółowe wymagania bezpieczeństwa dla ciasteczek znajdują się w rozdziale „Bezpieczeństwo frontendu webowego”.
+* Tokeny samowystarczalne są często używane jako sposób utrzymywania sesji. Szczegółowe wymagania bezpieczeństwa znajdują się w rozdziale „Tokeny samowystarczalne”.
 
 ## V7.1 Dokumentacja zarządzania sesją
 
 Nie istnieje jeden wzorzec pasujący do wszystkich aplikacji. Nie jest zatem możliwe zdefiniowanie uniwersalnych granic i limitów odpowiednich dla wszystkich przypadków. Warunkiem wstępnym implementacji i testowania musi być analiza ryzyka wraz z udokumentowanymi decyzjami bezpieczeństwa dotyczącymi obsługi sesji. Zapewnia to dopasowanie systemu zarządzania sesją do konkretnych wymagań aplikacji.
 
-Niezależnie od tego, czy wybrano mechanizm sesji stanowy, czy „bezstanowy", analiza musi być kompletna i udokumentowana, aby wykazać, że wybrane rozwiązanie jest w stanie spełnić wszystkie istotne wymagania bezpieczeństwa. Należy również uwzględnić interakcję z ewentualnie używanymi mechanizmami jednokrotnego logowania (SSO).
+Niezależnie od tego, czy wybrano mechanizm sesji stanowy, czy „bezstanowy”, analiza musi być kompletna i udokumentowana, aby wykazać, że wybrane rozwiązanie jest w stanie spełnić wszystkie istotne wymagania bezpieczeństwa. Należy również uwzględnić interakcję z ewentualnie używanymi mechanizmami jednokrotnego logowania (SSO).
 
 | # | Opis | Poziom |
 | :---: | :--- | :---: |
@@ -56,7 +56,7 @@ Dla stanowych mechanizmów sesji zakończenie zwykle polega na unieważnieniu se
 
 | # | Opis | Poziom |
 | :---: | :--- | :---: |
-| **7.4.1** | Zweryfikuj, że po wyzwoleniu zakończenia sesji (np. wylogowanie lub wygaśnięcie) aplikacja uniemożliwia dalsze korzystanie z sesji. Dla tokenów referencyjnych lub sesji stanowych oznacza to unieważnienie danych sesji w backendzie aplikacji. Aplikacje używające tokenów samowystarczalnych będą potrzebowały rozwiązania takiego jak utrzymywanie listy zakończonych tokenów, odrzucanie tokenów wystawionych przed określoną per użytkownik datą i godziną lub rotacja klucza podpisującego per użytkownik. | 1 |
+| **7.4.1** | Zweryfikuj, że po wyzwoleniu zakończenia sesji (np. wylogowanie lub wygaśnięcie) aplikacja uniemożliwia dalsze korzystanie z sesji. Dla tokenów referencyjnych lub sesji stanowych oznacza to unieważnienie danych sesji w backendzie aplikacji. Aplikacje używające tokenów samowystarczalnych będą potrzebowały rozwiązania takiego jak utrzymywanie listy zakończonych tokenów, odrzucanie tokenów wystawionych przed określoną dla każdego użytkownika datą i godziną lub rotacja klucza podpisującego dla każdego użytkownika. | 1 |
 | **7.4.2** | Zweryfikuj, że aplikacja kończy wszystkie aktywne sesje, gdy konto użytkownika zostaje wyłączone lub usunięte (np. gdy pracownik odchodzi z firmy). | 1 |
 | **7.4.3** | Zweryfikuj, że aplikacja daje możliwość zakończenia wszystkich pozostałych aktywnych sesji po udanej zmianie lub usunięciu dowolnego czynnika uwierzytelniania (w tym zmianie hasła poprzez reset lub odzyskiwanie oraz — jeśli występuje — zmianie ustawień MFA). | 2 |
 | **7.4.4** | Zweryfikuj, że wszystkie strony wymagające uwierzytelnienia mają łatwy i widoczny dostęp do funkcji wylogowania. | 2 |
@@ -66,7 +66,7 @@ Dla stanowych mechanizmów sesji zakończenie zwykle polega na unieważnieniu se
 
 Ta sekcja zawiera wymagania ograniczające ryzyko stwarzane przez aktywne sesje, które zostały przejęte lub są nadużywane poprzez wektory bazujące na istnieniu i możliwościach aktywnych sesji użytkowników. Przykładem jest wykorzystanie wykonania złośliwej treści do zmuszenia uwierzytelnionej przeglądarki ofiary do wykonania akcji z użyciem jej sesji.
 
-Rozważając wymagania tej sekcji, należy wziąć pod uwagę wytyczne dla poszczególnych poziomów z rozdziału „Uwierzytelnianie".
+Rozważając wymagania tej sekcji, należy wziąć pod uwagę wytyczne dla poszczególnych poziomów z rozdziału „Uwierzytelnianie”.
 
 | # | Opis | Poziom |
 | :---: | :--- | :---: |

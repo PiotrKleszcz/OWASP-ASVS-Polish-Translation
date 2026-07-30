@@ -23,7 +23,7 @@ Ta sekcja przedstawia wymagania dokumentacyjne dotyczące sposobu, w jaki aplika
 
 Aplikacje współpracują z wieloma usługami, w tym API, bazami danych i innymi komponentami. Mogą one być uznawane za wewnętrzne dla aplikacji, lecz nieobjęte jej standardowymi mechanizmami kontroli dostępu, albo mogą być całkowicie zewnętrzne. W obu przypadkach konieczne jest skonfigurowanie aplikacji do bezpiecznej współpracy z tymi komponentami oraz — jeśli to wymagane — ochrona tej konfiguracji.
 
-Uwaga: rozdział „Bezpieczna komunikacja" zawiera wytyczne dotyczące szyfrowania w tranzycie.
+Uwaga: rozdział „Bezpieczna komunikacja” zawiera wytyczne dotyczące szyfrowania w tranzycie.
 
 | # | Opis | Poziom |
 | :---: | :--- | :---: |
@@ -36,7 +36,7 @@ Uwaga: rozdział „Bezpieczna komunikacja" zawiera wytyczne dotyczące szyfrowa
 
 ## V13.3 Zarządzanie sekretami
 
-Zarządzanie sekretami to kluczowe zadanie konfiguracyjne zapewniające ochronę danych używanych w aplikacji. Szczegółowe wymagania dotyczące kryptografii znajdują się w rozdziale „Kryptografia", natomiast ta sekcja koncentruje się na aspektach zarządzania sekretami i ich obsługi.
+Zarządzanie sekretami to kluczowe zadanie konfiguracyjne zapewniające ochronę danych używanych w aplikacji. Szczegółowe wymagania dotyczące kryptografii znajdują się w rozdziale „Kryptografia”, natomiast ta sekcja koncentruje się na aspektach zarządzania sekretami i ich obsługi.
 
 | # | Opis | Poziom |
 | :---: | :--- | :---: |

@@ -37,7 +37,7 @@ W szczególności konieczne jest wdrożenie zabezpieczeń przed atakami zalewowy
 
 Systemy opierające się wyłącznie na komunikacji medialnej peer-to-peer między przeglądarkami, bez udziału pośredniczących serwerów mediów, są wyłączone z tych specyficznych wymagań dotyczących mediów.
 
-Ta sekcja odnosi się do użycia Datagram Transport Layer Security (DTLS) w kontekście WebRTC. Wymaganie dotyczące posiadania udokumentowanej polityki zarządzania kluczami kryptograficznymi znajduje się w rozdziale „Kryptografia". Informacje o zatwierdzonych metodach kryptograficznych można znaleźć w Załączniku kryptograficznym ASVS albo w dokumentach takich jak NIST SP 800‑52 Rev. 2 lub BSI TR‑02102‑2 (wersja 2025‑01).
+Ta sekcja odnosi się do użycia Datagram Transport Layer Security (DTLS) w kontekście WebRTC. Wymaganie dotyczące posiadania udokumentowanej polityki zarządzania kluczami kryptograficznymi znajduje się w rozdziale „Kryptografia”. Informacje o zatwierdzonych metodach kryptograficznych można znaleźć w Załączniku kryptograficznym ASVS albo w dokumentach takich jak NIST SP 800‑52 Rev. 2 lub BSI TR‑02102‑2 (wersja 2025‑01).
 
 | # | Opis | Poziom |
 | :---: | :--- | :---: |
@@ -46,7 +46,7 @@ Ta sekcja odnosi się do użycia Datagram Transport Layer Security (DTLS) w kont
 | **17.2.3** | Zweryfikuj, że uwierzytelnianie Secure Real-time Transport Protocol (SRTP) jest sprawdzane na serwerze mediów, aby zapobiec sytuacji, w której ataki wstrzyknięcia Real-time Transport Protocol (RTP) prowadzą do odmowy usługi albo wstawienia treści audio lub wideo do strumieni mediów. | 2 |
 | **17.2.4** | Zweryfikuj, że serwer mediów jest w stanie kontynuować przetwarzanie przychodzącego ruchu medialnego po napotkaniu zniekształconych pakietów Secure Real-time Transport Protocol (SRTP). | 2 |
 | **17.2.5** | Zweryfikuj, że serwer mediów jest w stanie kontynuować przetwarzanie przychodzącego ruchu medialnego podczas zalewu pakietami Secure Real-time Transport Protocol (SRTP) od uprawnionych użytkowników. | 3 |
-| **17.2.6** | Zweryfikuj, że serwer mediów nie jest podatny na podatność „ClientHello" Race Condition w Datagram Transport Layer Security (DTLS) — sprawdzając, czy serwer mediów jest publicznie znany jako podatny, albo wykonując test wyścigu. | 3 |
+| **17.2.6** | Zweryfikuj, że serwer mediów nie jest podatny na podatność „ClientHello” Race Condition w Datagram Transport Layer Security (DTLS) — sprawdzając, czy serwer mediów jest publicznie znany jako podatny, albo wykonując test wyścigu. | 3 |
 | **17.2.7** | Zweryfikuj, że wszelkie mechanizmy nagrywania audio lub wideo powiązane z serwerem mediów są w stanie kontynuować przetwarzanie przychodzącego ruchu medialnego podczas zalewu pakietami Secure Real-time Transport Protocol (SRTP) od uprawnionych użytkowników. | 3 |
 | **17.2.8** | Zweryfikuj, że certyfikat Datagram Transport Layer Security (DTLS) jest sprawdzany względem atrybutu fingerprint Session Description Protocol (SDP), z zakończeniem strumienia mediów w razie niepowodzenia sprawdzenia, aby zapewnić autentyczność strumienia mediów. | 3 |
 

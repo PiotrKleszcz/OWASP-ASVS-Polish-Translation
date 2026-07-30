@@ -17,13 +17,13 @@ Dokumentacja walidacji i logiki biznesowej powinna jasno definiować limity logi
 | :---: | :--- | :---: |
 | **2.1.1** | Zweryfikuj, że dokumentacja aplikacji definiuje reguły walidacji danych wejściowych określające, jak sprawdzać poprawność danych względem oczekiwanej struktury. Mogą to być powszechne formaty danych, takie jak numery kart płatniczych, adresy e-mail, numery telefonów, lub wewnętrzny format danych. | 1 |
 | **2.1.2** | Zweryfikuj, że dokumentacja aplikacji definiuje sposób walidacji logicznej i kontekstowej spójności powiązanych danych — na przykład sprawdzenie, czy dzielnica i kod pocztowy do siebie pasują. | 2 |
-| **2.1.3** | Zweryfikuj, że oczekiwania dotyczące limitów i walidacji logiki biznesowej są udokumentowane, zarówno w ujęciu per użytkownik, jak i globalnie dla całej aplikacji. | 2 |
+| **2.1.3** | Zweryfikuj, że oczekiwania dotyczące limitów i walidacji logiki biznesowej są udokumentowane, zarówno dla poszczególnych użytkowników, jak i globalnie dla całej aplikacji. | 2 |
 
 ## V2.2 Walidacja danych wejściowych
 
 Skuteczne mechanizmy walidacji danych wejściowych wymuszają oczekiwania biznesowe lub funkcjonalne wobec typu danych, które aplikacja spodziewa się otrzymać. Zapewnia to dobrą jakość danych i zmniejsza powierzchnię ataku. Nie eliminuje jednak ani nie zastępuje konieczności stosowania poprawnego kodowania, parametryzacji lub sanityzacji przy użyciu danych w innym komponencie lub przy prezentowaniu ich na wyjściu.
 
-W tym kontekście „dane wejściowe" mogą pochodzić z bardzo różnych źródeł, w tym z pól formularzy HTML, żądań REST, parametrów URL, pól nagłówków HTTP, ciasteczek, plików na dysku, baz danych i zewnętrznych API.
+W tym kontekście „dane wejściowe” mogą pochodzić z bardzo różnych źródeł, w tym z pól formularzy HTML, żądań REST, parametrów URL, pól nagłówków HTTP, ciasteczek, plików na dysku, baz danych i zewnętrznych API.
 
 Mechanizm logiki biznesowej może sprawdzać, czy dane wejściowe są liczbą mniejszą niż 100. Oczekiwanie funkcjonalne może sprawdzać, czy liczba znajduje się poniżej pewnego progu — jeśli liczba ta steruje tym, ile razy wykona się dana pętla, wysoka wartość mogłaby prowadzić do nadmiernego przetwarzania i potencjalnej odmowy usługi.
 
@@ -31,7 +31,7 @@ Choć walidacja schematem nie jest jawnie wymagana, może być najskuteczniejszy
 
 Należy zwrócić uwagę na następujące kwestie dotyczące walidacji schematem:
 
-* „Opublikowana wersja" specyfikacji walidacji JSON Schema jest uznawana za gotową do użytku produkcyjnego, ale nie jest, ściśle rzecz biorąc, „stabilna". Korzystając z walidacji JSON Schema, należy upewnić się, że nie ma rozbieżności ze wskazówkami zawartymi w poniższych wymaganiach.
+* „Opublikowana wersja” specyfikacji walidacji JSON Schema jest uznawana za gotową do użytku produkcyjnego, ale nie jest, ściśle rzecz biorąc, „stabilna”. Korzystając z walidacji JSON Schema, należy upewnić się, że nie ma rozbieżności ze wskazówkami zawartymi w poniższych wymaganiach.
 * Używane biblioteki walidacji JSON Schema powinny być monitorowane i w razie potrzeby aktualizowane po sformalizowaniu standardu.
 * Nie należy używać walidacji DTD, a przetwarzanie DTD we frameworkach powinno zostać wyłączone, aby uniknąć problemów z atakami XXE wymierzonymi w DTD.
 
